@@ -1,0 +1,65 @@
+.modal {
+	background: #fff;
+	position: absolute;
+	top: 0;
+	bottom:0;
+	right:0;
+	left: 0;
+	opacity: 0;		 
+	color: white;
+	font-family: Verdana;
+	z-index: -1;
+}
+
+#openModal:target {
+	opacity: 1;
+	z-index: 1;
+	transition: all 0.6s ease-in;
+}
+
+.open {
+	height: 100px;
+	width: 100px;
+	background: lightgreen;
+	padding: 20px;
+	margin:10% auto;
+}
+a {
+	position:relative;
+	top:10px;
+	text-decoration: none;
+	color: #fff;
+	font-family: Verdana;
+	font-size: 30px;
+}
+
+.more-details {
+	background: lightgreen;
+	width: 50%;
+	text-align: center;
+	padding: 20px;
+	color: #fff;
+	margin: auto;
+	position: relative;
+	top:100px;
+}
+
+#closeModal {
+	width: 100px;
+    height: 60px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background: lightgreen;
+    box-shadow: 2px 2px 2px;
+}
+
+#closeModal a {
+	text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-family: Verdana;
+    padding-left: 20%;
+    position: relative;
+    top: 15px;
+}
